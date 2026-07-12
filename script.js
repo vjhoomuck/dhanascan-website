@@ -26,7 +26,7 @@ Email : ${email}`);
   });
 }
 
-const pages = ['assets/livret-page-1.jpg', 'assets/livret-page-2.jpg', 'assets/livret-page-3.jpg', 'assets/livret-page-4.jpg', 'assets/livret-page-5.jpg'];
+const pages = ['assets/livret-aeiou-page-1.jpg', 'assets/livret-aeiou-page-6.jpg', 'assets/livret-aeiou-page-12.jpg', 'assets/livret-aeiou-page-32.jpg', 'assets/livret-aeiou-page-39.jpg', 'assets/livret-aeiou-page-42.jpg', 'assets/livret-aeiou-page-45.jpg', 'assets/livret-aeiou-page-48.jpg'];
 
 let currentPage = 0;
 const img = document.querySelector('#bookletImage');
@@ -49,4 +49,16 @@ if (prev && next) {
     currentPage = (currentPage + 1) % pages.length;
     updateBooklet();
   });
+}
+
+
+const bookletPageNumbers = [1, 6, 12, 32, 39, 42, 45, 48];
+function updateBookletCaptionWithRealPages() {
+  if (!caption) return;
+  caption.textContent = `Page ${bookletPageNumbers[currentPage]} • ${currentPage + 1} / ${pages.length}`;
+}
+if (prev && next) {
+  prev.addEventListener('click', updateBookletCaptionWithRealPages);
+  next.addEventListener('click', updateBookletCaptionWithRealPages);
+  updateBookletCaptionWithRealPages();
 }

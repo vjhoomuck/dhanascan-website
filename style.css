@@ -49,44 +49,13 @@ input,textarea{width:100%;border:2px solid #d8ecff;border-radius:16px;padding:13
 @media(max-width:1050px){.steps-row{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr;text-align:center;padding-top:44px}.lead{margin-left:auto;margin-right:auto}.hero-actions,.trust-list{justify-content:center}.resource-grid{grid-template-columns:repeat(2,1fr)}.video-grid{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:repeat(2,1fr)}.contact-card,.download-card,.quote-card{grid-template-columns:1fr}.quote-card img{max-width:220px;margin:auto}}
 @media(max-width:760px){.menu-button{display:block}.site-nav{position:absolute;top:72px;left:16px;right:16px;display:none;flex-direction:column;align-items:flex-start;padding:18px;border-radius:20px;background:#fff;box-shadow:var(--shadow)}.site-nav.open{display:flex}.site-nav.static{position:static;display:flex;flex-direction:row;box-shadow:none;background:transparent;padding:0}.section{width:min(100% - 24px,1180px);padding:48px 0}.steps-row,.resource-grid,.video-grid,.info-grid{grid-template-columns:1fr}.video-card.featured{grid-column:auto}.resource-card img{height:230px}.store-badge img{height:42px}.store-badge.google img{height:52px}.booklet-viewer{grid-template-columns:1fr}.booklet-btn{margin:auto}.booklet-page{padding:14px}.booklet-page img{max-height:none;width:100%}.step-mini-card img{aspect-ratio:1.25/1}}
 
-
-/* Article / About section */
-.about-article{
-  display:grid;
-  grid-template-columns:1fr 1.15fr;
-  gap:28px;
-  align-items:center;
-  background:rgba(255,255,255,.94);
-  border-radius:28px;
-  padding:32px;
-  box-shadow:var(--shadow);
-}
-.about-article img{
-  width:100%;
-  border-radius:22px;
-  box-shadow:0 12px 30px rgba(15,73,125,.13);
-}
-.about-article p{
-  color:var(--muted);
-  line-height:1.75;
-}
-.lang-switch{
-  display:inline-flex;
-  gap:8px;
-  align-items:center;
-  padding:8px 12px;
-  border-radius:999px;
-  background:#ffffff;
-  box-shadow:0 8px 18px rgba(15,73,125,.08);
-  font-weight:900;
-}
-.lang-switch a{
-  text-decoration:none;
-  color:#105a9c;
-}
-.lang-switch .active{
-  color:#10243f;
-}
-@media(max-width:850px){
-  .about-article{grid-template-columns:1fr}
-}
+/* DhanaScan SERCER update */
+.compact-lead{margin-top:-14px}
+.sercer-row{grid-template-columns:repeat(6,1fr)}
+.sercer-word{font-weight:900}.sercer-word.scan,.scan-text{color:#1479d6}.sercer-word.listen,.listen-text{color:#ff8a22}.sercer-word.repeat,.repeat-text{color:#34a853}.sercer-word.colour,.colour-text{color:#9b5de5}.sercer-word.exercise,.exercise-text{color:#f4b400}.sercer-word.reinforce,.reinforce-text{color:#e63946}
+.sercer-letter{display:inline-grid;place-items:center;width:28px;height:28px;margin-right:6px;border-radius:10px;color:#fff;font-weight:900}.sercer-letter.scan{background:#1479d6}.sercer-letter.listen{background:#ff8a22}.sercer-letter.repeat{background:#34a853}.sercer-letter.colour{background:#9b5de5}.sercer-letter.exercise{background:#f4b400;color:#10243f}.sercer-letter.reinforce{background:#e63946}
+.learning-grid{grid-template-columns:repeat(3,1fr)}
+.english-section{border-top:1px solid rgba(20,121,214,.12)}
+.english-card img{object-fit:cover;object-position:top center;max-height:420px;width:220px}
+@media(max-width:1050px){.sercer-row{grid-template-columns:repeat(3,1fr)}.learning-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.sercer-row,.learning-grid{grid-template-columns:1fr}.english-card img{width:100%;max-height:none}}
